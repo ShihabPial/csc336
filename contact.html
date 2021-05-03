@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ronkonkoma Coffee</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="coffee.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<section id="banner">
+		<img src="logo.png" class="logo">
+		<div class="banner-text">
+			<h1>Coffee House</h1>
+			<p>Style Your Coffee The Way You Want</p>
+			<div class="banner-btn">
+				<a href="info.html"><span></span>About Us</a>
+				<a href="online.html"><span></span>Online Order</a>
+				<a href="trivia.html"><span></span>Trivia</a>
+			</div>
+		</div>
+	</section>
+
+	<div id="sideNav">
+		<nav>
+			<ul>
+				<li><a href="coffee.html">Home</a></li>
+				<li><a href="variety.html">Our Coffee</a></li>
+				<li><a href="contact.html">Services</a></li>
+				<li><a href="info.html">Meet Us</a></li>
+			</ul>
+		</nav>
+		
+	</div>
+
+	<div id="menubtn">
+		<img src="menu.png" id="menu">
+	</div>
+
+	<br>
+	<br>
+	
+
+	<section id="feature">
+		<div class="title-text">
+			<p>About US</p>
+		</div>
+		<div class="feature_box">
+			<div class="features">
+				<div>
+                <div>
+                    <h1>Services</h1>
+				<ul>
+					<li>Dine-in</li>
+					<li>Uber Eats</li>
+					<li>Drive-thru</li>
+					<li>Doordash</li>
+				</ul>
+                </div>
+               
+            </div>
+			</div>
+
+			<div class="features-img">
+				<div>
+					<img src="services.jpg">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="footer">
+		<div class="title-text">
+			<p>Contact</p>
+			<h1>Visit Shop Today</h1>
+		</div>
+
+		<div class="footer-row">
+			<div class="footer-left">
+				
+			</div>
+			<div class="footer-right">
+			</div>
+		</div>
+
+		<div class="social-links">
+			<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+			<a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+			<a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+			<a href="https://www.youtube.com"><i class="fa fa-youtube-play"></i></a>
+			<p>Copyright Ronkonkoma Coffee Shop</p>
+		</div>
+	</section>
+
+	<script>
+		var menubtn = document.getElementById("menubtn");
+		var sidenav = document.getElementById("sideNav");
+		var menu = document.getElementById("menu");
+
+		sideNav.style.right = "-250px";
+
+		menubtn.onclick = function(){
+			if(sidenav.style.right == "-250px"){
+				sidenav.style.right = "0";
+				menu.src = "close.png";
+			}
+			else{
+				sidenav.style.right = "-250px";
+				menu.src = "menu.png";
+			}
+		}
+	</script>
+
+</body>
+</html>
